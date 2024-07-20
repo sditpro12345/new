@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url("ind.jpg") no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        nav {
+            width: 100%;
+            background: hsla(176, 8%, 65%, 0.5); /* Semi-transparent background */
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 20em;
+        }
+        .nav-container a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .nav-container a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            margin-top: 80px; /* Adjust for fixed nav height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+       form {
+            /*background: rgba(255, 255, 255, 0.5);*/
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+        }
+        button, .admin-button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .admin-button {
+            background-color: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+        .admin-button:hover {
+            background-color: #0056b3;
+        }
+        #donorList {
+            margin-top: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #donorList div {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        #donorList hr {
+            border: 0;
+            border-top: 1px solid #ced4da;
+            margin: 10px 0;
+        }
+        .notification {
+            display: none;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .notification.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .notification.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="donorlogin.html">Donor Login</a>
+            <a href="adminlogin.html">Admin Login</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <h1>Organ Donation System</h1>
+        <form id="donorForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="bloodType" placeholder="Blood Type" required>
+            <input type="text" id="contactInfo" placeholder="Contact Info" required>
+            <button id="redirectButton">Register</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('redirectButton').addEventListener('click', function() {
+            window.location.href = 'succes.html'; // Replace with the actual URL of the page
+        });
+    </script>
+</body>
+</html>

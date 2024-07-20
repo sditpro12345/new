@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url("about.jpg") no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        nav {
+            width: 100%;
+            background: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-container a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .nav-container a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            margin-top: 80px; /* Adjust for fixed nav height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #495057;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="login.html">Home</a>
+            <a href="donorlogin.html">Donor Login</a>
+            <a href="adminlogin.html">Admin Login</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <h1>About Us</h1>
+        <p>
+            Welcome to the Organ Donation System. Our mission is to facilitate and encourage organ donation 
+            by providing a user-friendly platform where potential donors can register and make a difference in 
+            the lives of those in need. Our system connects donors with medical institutions and ensures that 
+            the donation process is smooth and efficient.
+        </p>
+        <p>
+            We believe in the power of community and the importance of contributing to a greater cause. Our platform 
+            aims to simplify the process of organ donation and provide the necessary support to both donors and 
+            recipients. Thank you for considering becoming a donor and for helping us in our mission to save lives.
+        </p>
+    </div>
+</body>
+</html>
